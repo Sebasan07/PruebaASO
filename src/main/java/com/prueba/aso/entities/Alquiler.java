@@ -48,6 +48,14 @@ public class Alquiler implements Serializable {
     public Alquiler() {
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     public Date getFechaEntrada() {
         return this.fechaEntrada;
     }

@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -19,7 +20,7 @@ public class AlquilerServiceImpl implements AlquilerService {
 
     @Override
     @Transactional(readOnly = true)
-    public Iterable<Alquiler> findAll() {
+    public List<Alquiler> findAll() {
         return iAlquilerRepository.findAll();
     }
 
